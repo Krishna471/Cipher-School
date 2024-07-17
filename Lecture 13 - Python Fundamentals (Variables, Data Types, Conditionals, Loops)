@@ -1,0 +1,373 @@
+#Assigning  values to the variables
+name = "Krishna Arora" #String type
+age = 20  #Integer type
+cgpa = 8.4  #Floating Type
+     
+'''Data Types'''
+
+#Integer
+num = 10
+
+#Inbuilt functions and operations for Integers:
+print(abs(num)) #Absolute value
+     
+10
+
+print(bin(num)) #Binary representation
+     
+0b1010
+
+print(hex(num)) #Hexadecimal representation
+     
+0xa
+
+print(pow(num,2)) #Power Function (num^2)
+     
+100
+
+print(divmod(num,3))   #Quotient and Remainder
+     
+(3, 1)
+
+#Float
+price = 99.99
+
+#Inbuilt functions and operations for Floats:
+print(round(price)) #Rounding
+     
+100
+
+print(abs(price))   #absolute value
+     
+99.99
+
+print(int(price))   #convert to integer
+     
+99
+
+print(float("123.45"))  #convert string to float
+     
+123.45
+
+print(price.is_integer()) #check if float is an integer
+     
+False
+
+#String
+greeting = "Hello, World!"
+
+#Inbuilt functions and operations for String:
+
+print(greeting.lower()) #convert to lowercase
+     
+hello, world!
+
+print(greeting.upper()) #convert to uppercase
+     
+HELLO, WORLD!
+
+print(greeting.replace("World","Universe")) #replace substring
+     
+Hello, Universe!
+
+print(greeting.split(",")) #split string into a list
+     
+['Hello', ' World!']
+
+print(greeting.find("World")) #find substring
+     
+7
+
+print(len(greeting)) #length of string
+     
+13
+
+#List
+fruits = ["apple", "banana", "cherry"]
+
+#Inbuilt functions and operations for List:
+print(fruits.append("orange")) #add element to the end of the list
+     
+None
+
+print(fruits)
+     
+['apple', 'banana', 'cherry', 'orange']
+
+fruits.extend(["mango", "kiwi"]) #add multiple elements to the end of the list
+     
+
+print(fruits)
+     
+['apple', 'banana', 'cherry', 'orange', 'mango', 'kiwi']
+
+fruits.remove("banana") #remove element from the list
+     
+
+print(fruits)
+     
+['apple', 'cherry', 'orange', 'mango', 'kiwi']
+
+fruits.pop() #remove last element
+     
+'kiwi'
+
+print(fruits)
+     
+['apple', 'cherry', 'orange', 'mango']
+
+fruits.sort()   #sort the list
+     
+
+print(fruits)
+     
+['apple', 'cherry', 'mango', 'orange']
+
+print(len(fruits))    #length of the list
+     
+4
+
+print(fruits.index("cherry"))   #finding index
+     
+1
+
+print("apple" in fruits)  #checking if element is in the list
+     
+True
+
+#Tuple
+coordinates = (10.0, 20.0)
+#Inbuilt functions and operations for Tuple:
+print(coordinates[0]) #access element by index
+     
+10.0
+
+print(coordinates.count(10.0)) #count occurrences of an element
+     
+1
+
+print(coordinates.index(20.0)) #find index of an element
+     
+1
+
+print(len(coordinates)) #Length of a tuple
+     
+2
+
+li = list(coordinates) #convert tuple to list
+li
+     
+[10.0, 20.0]
+
+li[1] = "hi"
+     
+
+li
+     
+[10.0, 'hi']
+
+coordinates = tuple(li)
+coordinates
+     
+(10.0, 'hi')
+
+# Dictionary
+person = {"name": "John", "age": 30}
+
+#Inbuilt functions and operations for Dictionary:
+print(person.keys())  #Get all keys
+     
+dict_keys(['name', 'age'])
+
+print(person.values()) #Get all values
+     
+dict_values(['John', 30])
+
+print(person.items()) #Get all key-value pairs
+     
+dict_items([('name', 'John'), ('age', 30)])
+
+print(person.get("name")) #Get value for a key
+     
+John
+
+person.update({"height": 180})  #Update dictionary with another dictionary
+person
+     
+{'name': 'John', 'age': 30, 'height': 180}
+
+person.pop("age") #Remove key-value pair
+person
+     
+{'name': 'John', 'height': 180}
+
+print(len(person))
+     
+2
+
+#set
+se={1,2,3,4}
+     
+
+#not allow duplicates
+se={1,1,1,1,1}
+se
+     
+{1}
+
+#length
+print(len(se))
+     
+1
+
+#add
+se.add(9)
+se
+     
+{1, 9}
+
+se.update([5,6,7])
+se
+     
+{1, 5, 6, 7, 9}
+
+se.remove(5)
+se
+     
+{1, 6, 7, 9}
+
+#Boolean
+is_active = 1
+
+#Inbuilt functions and operations for Boolean:
+print(int(is_active))   #Convert to integer (1 for True, 0 for False)
+     
+
+print(bool(0))      #Convert integer to boolean (False)
+     
+
+print(bool(1))      #Convert integer to boolean (True)
+     
+
+print(bool("Hello"))    #Convert string to boolean (True)
+     
+
+print(is_active and False)    #Logical AND
+     
+
+print(is_active or False)    #Logical OR
+     
+
+print(not is_active)    #Logical NOT
+     
+Conditionals
+
+
+# Basic if-elif-else statement
+age = 20
+
+if age < 18:
+    print("You are a minor.")
+elif age >= 18 and age < 65:
+    print("You are an adult.")
+else:
+    print("You are a senior citizen.")
+     
+
+# Checking Even or Odd Number
+number = 42
+
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+     
+
+#Grade Evaluation
+score = 85
+
+if score >= 90:
+    grade = 'A'
+elif score >= 80:
+    grade = 'B'
+elif score >= 70:
+    grade = 'C'
+     
+Loops
+
+
+# For loop
+for i in range(5):
+    print(i)
+     
+
+#Iterating over a list
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+     
+
+#Iterating over a string
+greeting = "Hello"
+
+for char in greeting:
+  print(char)
+     
+
+#Iterating over a dictionary
+person = {"name":"John","age":30,"city":"New-York"}
+
+for key, value in person.items():
+  print(f"{key}: {value}")
+     
+
+#Using the `range()` function with a step
+for i in range(0,10,2):
+  print(i)
+     
+
+#Nested for Loop
+for i in range(3):
+  for j in range(2):
+    print(f"i = {i}, j = {j}")
+     
+
+#Using the enumerate() function
+fruits = ["apple", "banana", "cherry"]
+
+for i, fruit in enumerate(fruits):
+  print(f"Index: {i}, Fruit: {fruit}")
+     
+
+#While Loop
+count = 0
+while count < 5:
+  print(count)
+  count += 1
+     
+
+#While loop with break
+count = 0
+while True:
+  print(count)
+  count += 1
+  if count >= 5:
+    break
+     
+
+#While Loop with continue
+count = 0
+while count < 10:
+  count += 1
+  if count % 2 == 0:
+    continue
+  print(count)
+     
+
+#Using a while loop for Validation
+password = ""
+while len(password) < 8:
+  password = input("Enter a password: ")
+  if len(password) < 8:
+    print("Password must be at least 8 characters long.")
+print("Password Accepted")
